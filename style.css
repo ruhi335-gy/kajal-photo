@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('bg.jpg'); /* Make sure your bg image is in the 'images' folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for centering content */
+.container {
+    width: 100%;
+    max-width: 380px;  /* Set a smaller width */
+    padding: 20px;
+}
+
+/* Box styling (password input box) */
+.box {
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for a modern look */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 100%;
+}
+
+/* Heading style */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Styling the password input */
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Toggle visibility label */
+.toggle {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Message below the password box */
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .box {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;  /* Smaller heading font for mobile */
+    }
+    
+    button {
+        font-size: 14px;  /* Smaller button text on mobile */
+    }
+}
